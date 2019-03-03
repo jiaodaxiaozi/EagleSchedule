@@ -1,0 +1,34 @@
+# Project has 6 activities and 2 different types of resources (assistants and painter)
+PROJECT 6 2
+# Emptying the first shop takes one day
+ACTIVITY 1 1
+# Painting the first shop takes two days
+ACTIVITY 2 2
+# Refilling back the first shop takes one day
+ACTIVITY 3 1
+# Emptying the second shop takes one day
+ACTIVITY 4 1
+# Painting the second shop takes two days
+ACTIVITY 5 2
+# Refilling back the second shop takes one day
+ACTIVITY 6 1
+# There are two assistants available
+RESOURCE 1 2
+# There is one painter available
+RESOURCE 2 1
+# The first shop can only be painted after being emptied
+SEQUENCE 1 2
+# The first shop can only be refilled after the painting is done
+SEQUENCE 2 3
+# The second shop can only be painted after being emptied
+SEQUENCE 4 5
+# The first shop can only be refilled after the painting is done
+SEQUENCE 5 6
+# The activities related to emptying and refilling the shops require two assistants
+ALLOCATE 1 1 2
+ALLOCATE 3 1 2
+ALLOCATE 4 1 2
+ALLOCATE 6 1 2
+# The activities related to painting require one painter
+ALLOCATE 5 2 1
+ALLOCATE 2 2 1

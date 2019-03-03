@@ -1,0 +1,15 @@
+# The project has 3 activities and one resource
+PROJECT 3 1
+# The 1st, 2nd 3rd activities take 2, 4 and 6 days, respectively
+ACTIVITY 1 2
+ACTIVITY 2 4
+ACTIVITY 3 6
+# There are 3 units available of the resource
+RESOURCE 1 3
+# The second activity can only start after the first one has finished
+SEQUENCE 1 2
+# The 1st activity requires 1 unit of the resource 1
+ALLOCATE 1 1 1
+# The 2nd and 3rd activites require two units of the resource 1
+ALLOCATE 2 1 2
+ALLOCATE 3 1 2
